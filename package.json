@@ -1,0 +1,50 @@
+{
+  "name": "clumper",
+  "description": "DESCRIPTIONHERE",
+  "version": "0.0.1",
+  "homepage": "http://github.com/wearefractal/clumper",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wearefractal/clumper.git"
+  },
+  "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
+  "main": "./index.js",
+  "dependencies": {
+    "parseurl": "^1.0.1",
+    "send": "^0.2.0",
+    "graceful-fs": "^2.0.3",
+    "async": "^0.7.0",
+    "detective-amd": "^2.0.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.0",
+    "should": "~3.1.0",
+    "mocha-lcov-reporter": "~0.0.1",
+    "coveralls": "~2.6.1",
+    "istanbul": "~0.2.3",
+    "rimraf": "~2.2.5",
+    "jshint": "~2.4.1",
+    "gulp-plumber": "^0.6.0",
+    "gulp": "^3.6.0",
+    "browserify": "^3.40.0",
+    "jshint-stylish": "^0.1.5",
+    "gulp-jshint": "^1.5.3",
+    "vinyl-source-stream": "^0.1.1",
+    "supertest": "^0.10.0",
+    "express": "^4.0.0"
+  },
+  "scripts": {
+    "test": "mocha test/*.js test/server/*.js --reporter spec && jshint",
+    "dev": "mocha test/*.js test/server/*.js --reporter spec --watch",
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
+  },
+  "engines": {
+    "node": ">= 0.9"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/wearefractal/clumper/raw/master/LICENSE"
+    }
+  ]
+}
