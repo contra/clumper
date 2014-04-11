@@ -1,4 +1,4 @@
-# clumper [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][david-image]][david-url]
+# clumper [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Support us][gittip-image]][gittip-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
 
 
 ## Information
@@ -23,17 +23,17 @@
 EXAMPLEHERE
 ```
 
+## Like what we do?
+
+[gittip-url]: https://www.gittip.com/WeAreFractal/
+[gittip-image]: http://img.shields.io/gittip/WeAreFractal.svg
+
+[downloads-image]: http://img.shields.io/npm/dm/clumper.svg
 [npm-url]: https://npmjs.org/package/clumper
-[npm-image]: https://badge.fury.io/js/clumper.png
+[npm-image]: http://img.shields.io/npm/v/clumper.svg
 
 [travis-url]: https://travis-ci.org/wearefractal/clumper
-[travis-image]: https://travis-ci.org/wearefractal/clumper.png?branch=master
+[travis-image]: http://img.shields.io/travis/wearefractal/clumper.svg
 
 [coveralls-url]: https://coveralls.io/r/wearefractal/clumper
-[coveralls-image]: https://coveralls.io/repos/wearefractal/clumper/badge.png
-
-[depstat-url]: https://david-dm.org/wearefractal/clumper
-[depstat-image]: https://david-dm.org/wearefractal/clumper.png
-
-[david-url]: https://david-dm.org/wearefractal/clumper
-[david-image]: https://david-dm.org/wearefractal/clumper.png?theme=shields.io
+[coveralls-image]: http://img.shields.io/coveralls/wearefractal/clumper/master.svg

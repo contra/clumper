@@ -1,3 +1,3 @@
-define(['a', 'b'], function(a, b){
+define(['a', 'b.js'], function(a, b){
   return a + b + 'c';
 });
