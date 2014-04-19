@@ -15,7 +15,7 @@ describe('getDependencies()', function() {
     });
   });
 
-  it('b.js should have no dependencies', function(done) {
+  it('b.js should have one dependency', function(done) {
     var fpath = path.join(this.fixtures, './b.js');
     clumper.getDependencies([fpath], function(err, files){
       should.not.exist(err);
@@ -26,7 +26,7 @@ describe('getDependencies()', function() {
     });
   });
 
-  it('c.js should have dependencies', function(done) {
+  it('c.js should have three dependencies', function(done) {
     var fpath = path.join(this.fixtures, './c.js');
     clumper.getDependencies([fpath], function(err, files){
       should.not.exist(err);
