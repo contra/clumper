@@ -10,11 +10,12 @@
   "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
   "main": "./index.js",
   "dependencies": {
-    "parseurl": "^1.0.1",
-    "send": "^0.2.0",
-    "graceful-fs": "^2.0.3",
     "async": "^0.7.0",
-    "detective-amd": "^2.0.1"
+    "detective-amd": "^2.0.1",
+    "graceful-fs": "^2.0.3",
+    "parseurl": "^1.0.1",
+    "resolve-path": "^1.0.0",
+    "send": "^0.2.0"
   },
   "devDependencies": {
     "mocha": "^1.17.0",

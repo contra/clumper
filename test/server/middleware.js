@@ -49,6 +49,14 @@ describe('middleware()', function() {
       .end(done);
   });
 
+  it('should resolve files outside of root to root', function(done) {
+    request(this.app)
+      .get('/clumper.js?files=../../../../a.js')
+      .expect('Content-Type', 'application/javascript')
+      .expect(200)
+      .end(done);
+  });
+
   it('should respond with files via JS', function(done) {
     request(this.app)
       .get('/clumper.js?files=a.js,b.js')
