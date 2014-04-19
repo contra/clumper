@@ -35,6 +35,13 @@ describe('middleware()', function() {
       .end(done);
   });
 
+  it('should not respond with non-existent file', function(done) {
+    request(this.app)
+      .get('/clumper.js?files=no-exist.js')
+      .expect(404)
+      .end(done);
+  });
+
   it('should respond with files via JS', function(done) {
     request(this.app)
       .get('/clumper.js?files=a.js,b.js')
