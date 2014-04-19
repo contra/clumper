@@ -10,7 +10,7 @@ describe('getDependencies()', function() {
       should.exist(err);
       should.exist(files);
       files.length.should.equal(0);
-      console.log(err);
+      err.code.should.equal('ENOENT');
       done();
     });
   });
